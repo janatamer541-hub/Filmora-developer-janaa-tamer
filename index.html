@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmora</title>
+    <link rel="shortcut icon" id="ShortcutIcon" href="./images/back/ChatGPT Image Sep 21, 2026, 11_52_36 PM.png">
+     <link rel="stylesheet" href="./css/plugins/animate.css">
+    <link rel="stylesheet" href="./css/plugins/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/plugins/all.min.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/plugins/owl.theme.default.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> 
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg text-light ">
+
+  <div class="container">
+       <a class="navbar-brand text-light" href="#Home">
+      <img src="./images/back/ChatGPT Image Sep 21, 2026, 11_52_36 PM.png" alt="Logo" width="90" height="90" class="d-inline-block ">
+      Filmora
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon text-light"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex ">
+                <li class="nav-item ">
+          <a class="nav-link text-light active" href="#Home">Home <i class="fa-solid fa-house"></i></a>
+        </li>
+                <li class="nav-item  ">
+          <a class="nav-link text-light" href="#Trend">Trending</a>
+        </li>
+                <li class="nav-item ">
+          <a class="nav-link text-light" href="#top-rated" >Top Rated</a>
+        </li>
+        <li class="nav-item  ">
+          <a class="nav-link text-light " aria-current="page" href="#">favourits <i class="fa-solid fa-heart fa-beat-fade" style="color: rgb(255, 255, 255);"></i></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-light" href="#"  onclick="openList()">My list <i class="fa-solid fa-folder-plus fa-float" style="color: rgb(255, 255, 255);"></i></a>
+        </li>
+
+      </ul>
+      <form class="d-lg-flex text-light mb-lg-0 mb-3 text-end " role="search">
+        <input class="form-control me-2 text-light" list="datalistOptions" type="search" placeholder="Discover" aria-label="Search"/>
+        <datalist id="datalistOptions">
+  <option value="San Francisco">
+  <option value="New York">
+  <option value="Seattle">
+  <option value="Los Angeles">
+  <option value="Chicago">
+</datalist>
+        <button class="btn text-light" type="submit">  <i class="fa-solid fa-magnifying-glass fa-swing"></i></button>
+      </form>
+
+        <div class=" registration text-center ">
+    <button href="button" class="btn btn-outline-light me-lg-3 my-3 my-lg-0" onclick="openLogin()" >Login</button>
+   <button type="button" class="btn btn-outline-light" onclick="openSignin()">
+    Sign Up
+</button>
+</div>
+    </div>
+  </div>
+</nav>
+<header id="Home" class="">
+
+<section class="splide" id="movie-slider">
+    <div class="splide__track">
+        <ul class="splide__list">
+
+            <li class="splide__slide">
+                <div class="movie-slide slide-1">
+                     <div class="container h-100">
+    <div class="row h-100 vh-100">
+        <div class="col-lg-5 part1 ">
+          <div class="item">
+            <h1 class="text-light mb-2">The King of Pop</h1>
+<div class="stars mb-3 ">
+          <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+            <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+          <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+        </div>
+            <p class="text-light">Experience the story, the music, and the legacy of a true legend.</p>
+            <button type="button" class="btn btn-primary">Explore Now..</button>
+            <button 
+    type="button" 
+    class="btn btn-outline-secondary"
+    onclick="toggleMyList(this, 'Michael Jackson')">
+
+    <i class="fa-solid fa-plus"></i>
+    <span>My list</span>
+
+</button>
+          </div>
+   
+    </div>
+        <div class="col-lg-7 part2 ">
+          <div class="item  d-block"> </div>
+            
+    </div>
+                </div>
+            </li>
+
+            <li class="splide__slide">
+                <div class="movie-slide slide-2">
+                     <div class="container h-100">
+    <div class="row h-100 vh-100">
+        <div class="col-lg-5 part1 ">
+          <div class="item">
+            <p class="text-light mb-0">Director:Thea Sharrock Writer:Jojo Moyes</p>
+                        <h1 class="text-light mb-2">ME BEFORE YOU</h1>
+                                    <div class="stars mb-3 ">
+          <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+            <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+          <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+        <i class="fa-solid fa-star-half" style="color: rgb(255, 252, 18);"></i>
+        </div>
+            <p class="text-light">A beautiful story of love, life, and the moments that change everything.</p>
+
+            <button type="button" class="btn btn-primary">Explore Now..</button>
+            <button type="button" class="btn btn-outline-secondary" onclick="toggleMyList(this, 'ME BEFORE YOU')"> <i class="fa-solid fa-plus fa-spin" style="color: rgb(209, 218, 229);"></i> My list </button>
+          </div>
+  
+    </div>
+        <div class="col-lg-7 part2 ">
+          <div class="item"></div>
+            
+    </div>
+                </div>
+            </li>
+
+            <li class="splide__slide">
+                <div class="movie-slide slide-3">
+                     <div class="container h-100">
+    <div class="row h-100 vh-100">
+        <div class="col-lg-5 part1 ">
+          <div class="item">
+                        <h1 class="text-light mb-2">Where Every Story Begins</h1>
+                                                            <div class="stars mb-3 ">
+          <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+            <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+          <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+       <i class="fa-regular fa-star" style="color: rgb(255, 252, 18);"></i>
+        </div>
+            <p class="text-light">Step into a world of magic, unforgettable characters, and timeless stories</p>
+            <button type="button" class="btn btn-primary">Explore Now..</button>
+            <button type="button" class="btn btn-outline-secondary" onclick="toggleMyList(this, 'Disney')"> <i class="fa-solid fa-plus fa-spin" style="color: rgb(209, 218, 229);"></i> My list </button>
+          </div>
+
+    </div>
+        <div class="col-lg-7 part2 ">
+          <div class="item"></div>
+            
+    </div>
+                </div>
+            </li>
+
+            <li class="splide__slide">
+                <div class="movie-slide slide-4">
+                     <div class="container h-100">
+    <div class="row h-100 vh-100">
+        <div class="col-lg-5 part1 ">
+          <div class="item">
+                        <h1 class="text-light mb-2">A World of Stories</h1>
+                                                            <div class="stars mb-3 ">
+          <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+            <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+          <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+        <i class="fa-solid fa-star" style="color: rgb(255, 252, 18);"></i>
+        </div>
+            <p class="text-light">From movies and series to animated adventures, there’s something for everyone.</p>
+            <button type="button" class="btn btn-primary">Explore Now..</button>
+  <!--           <button type="button" class="btn btn-outline-secondary" > <i class="fa-solid fa-plus fa-spin" style="color: rgb(209, 218, 229);"></i> My list </button> -->
+          </div>
+  
+    </div>
+        <div class="col-lg-7 part2 ">
+          <div class="item"></div>
+            
+    </div>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+</section>
+
+</header>
+<section class="splide py-5 " id="watch-slider" aria-label="Auto Scroll Example">
+<div class="container">
+          <div class="head mb-5">
+            <h3 class="text-light"><i class="fa-brands fa-youtube fa-beat me-3" style="color: rgb(255, 255, 255);"></i>continous watching</h3>
+        </div>
+
+
+    <div class="splide__track h-100">
+        <ul class="splide__list">
+
+            <li class="splide__slide">
+                <div class="watch-slide slide-1">
+                  
+                  <div class="layout">
+                    <div class="item text-center text-center text-light">
+                   
+                    <div class="movie-info text-center mt-3 thirdColor">
+    <span class=""><i class="hgi hgi-stroke hgi-rounded hgi-clock-01 thirdColor"></i> 2h 30m</span>
+    <span class=" "><i class="fa-solid fa-star" style="color: rgb(255, 252, 18); "></i> 8.2</span>
+    
+    
+</div>
+<div class="watch thirdColor">
+<a href="https://youtu.be/pnkgw6pAKkM?si=77vcUVZoWYZQb_Mp" target="">
+    <i class="hgi hgi-stroke hgi-rounded hgi-play-circle-02 me-2 text-light text-decoration-none"> </i><span thirdColor>Watch Trailer</span>
+    
+</a>
+
+</div>
+                  </div>
+                  
+                </div>
+
+                </div>
+            </li>
+
+            <li class="splide__slide">
+                <div class="watch-slide slide-2">
+                  <div class="layout">
+                      <div class="item text-center text-center text-light">
+                   
+                    <div class="movie-info text-center mt-3 thirdColor">
+    <span class=""><i class="hgi hgi-stroke hgi-rounded hgi-clock-01 thirdColor"></i> 2h 30m</span>
+    <span class=" "><i class="fa-solid fa-star" style="color: rgb(255, 252, 18); "></i> 8.2</span>
+    
+    
+</div>
+<!-- <p class="thirdColor">
+ A timeless tale of love, magic, and courage.
+</p> -->
+<div class="watch thirdColor">
+<a href="https://youtu.be/pnkgw6pAKkM?si=77vcUVZoWYZQb_Mp" target="">
+    <i class="hgi hgi-stroke hgi-rounded hgi-play-circle-02 me-2 text-light text-decoration-none"> </i><span thirdColor>Watch Trailer</span>
+    
+</a>
+
+</div>
+                  </div>
+                  </div>
+                </div>
+            </li>
+
+            <li class="splide__slide">
+                <div class="watch-slide slide-3">
+                  <div class="layout">
+  <div class="item text-center text-center text-light">
+                   
+                    <div class="movie-info text-center mt-3 thirdColor">
+    <span class=""><i class="hgi hgi-stroke hgi-rounded hgi-clock-01 thirdColor"></i> 2h 30m</span>
+    <span class=" "><i class="fa-solid fa-star" style="color: rgb(255, 252, 18); "></i> 8.2</span>
+    
+    
+</div>
+<!-- <p class="thirdColor">
+ A timeless tale of love, magic, and courage.
+</p> -->
+<div class="watch thirdColor">
+<a href="https://youtu.be/pnkgw6pAKkM?si=77vcUVZoWYZQb_Mp" target="">
+    <i class="hgi hgi-stroke hgi-rounded hgi-play-circle-02 me-2 text-light text-decoration-none"> </i><span thirdColor>Watch Trailer</span>
+    
+</a>
+
+</div>
+                  </div>
+                  </div>
+                </div>
+            </li>
+            <li class="splide__slide">
+                <div class="watch-slide slide-4">
+                  <div class="layout">
+                      <div class="item text-center text-center text-light">
+                   
+                    <div class="movie-info text-center mt-3 thirdColor">
+    <span class=""><i class="hgi hgi-stroke hgi-rounded hgi-clock-01 thirdColor"></i> 2h 30m</span>
+    <span class=" "><i class="fa-solid fa-star" style="color: rgb(255, 252, 18); "></i> 8.2</span>
+    
+    
+</div>
+<!-- <p class="thirdColor">
+ A timeless tale of love, magic, and courage.
+</p> -->
+<div class="watch thirdColor">
+<a href="https://youtu.be/pnkgw6pAKkM?si=77vcUVZoWYZQb_Mp" target="">
+    <i class="hgi hgi-stroke hgi-rounded hgi-play-circle-02 me-2 text-light text-decoration-none"> </i><span thirdColor>Watch Trailer</span>
+    
+</a>
+
+</div>
+                  </div>
+                  </div>
+                </div>
+            </li>
+                        <li class="splide__slide">
+                <div class="watch-slide slide-5">
+                  <div class="layout">  <div class="item text-center text-center text-light">
+                   
+                    <div class="movie-info text-center mt-3 thirdColor">
+    <span class=""><i class="hgi hgi-stroke hgi-rounded hgi-clock-01 thirdColor"></i> 2h 30m</span>
+    <span class=" "><i class="fa-solid fa-star" style="color: rgb(255, 252, 18); "></i> 8.2</span>
+    
+    
+</div>
+<!-- <p class="thirdColor">
+ A timeless tale of love, magic, and courage.
+</p> -->
+<div class="watch thirdColor">
+<a href="https://youtu.be/pnkgw6pAKkM?si=77vcUVZoWYZQb_Mp" target="">
+    <i class="hgi hgi-stroke hgi-rounded hgi-play-circle-02 me-2 text-light text-decoration-none"> </i><span thirdColor>Watch Trailer</span>
+    
+</a>
+
+</div>
+                  </div></div>
+                </div>
+            </li>
+                                    <li class="splide__slide">
+                <div class="watch-slide slide-6">
+                  <div class="layout">  
+                    <div class="item text-center text-center text-light">
+                   
+                    <div class="movie-info text-center mt-3 thirdColor">
+    <span class=""><i class="hgi hgi-stroke hgi-rounded hgi-clock-01 thirdColor"></i> 2h 30m</span>
+    <span class=" "><i class="fa-solid fa-star" style="color: rgb(255, 252, 18); "></i> 8.2</span>
+    
+    
+</div>
+
+
+<div class="watch thirdColor">
+<a href="https://youtu.be/pnkgw6pAKkM?si=77vcUVZoWYZQb_Mp" target="">
+    <i class="hgi hgi-stroke hgi-rounded hgi-play-circle-02 me-2 text-light text-decoration-none"> </i><span thirdColor>Watch Trailer</span>
+    
+</a>
+
+</div>
+                  </div>
+                </div>
+                </div>
+            </li>
+                                    <li class="splide__slide">
+                <div class="watch-slide slide-7">
+                  <div class="layout">  <div class="item text-center text-center text-light">
+                   
+                    <div class="movie-info text-center mt-3 thirdColor">
+    <span class=""><i class="hgi hgi-stroke hgi-rounded hgi-clock-01 thirdColor"></i> 2h 30m</span>
+    <span class=" "><i class="fa-solid fa-star" style="color: rgb(255, 252, 18); "></i> 8.2</span>
+    
+    
+</div>
+<!-- <p class="thirdColor">
+ A timeless tale of love, magic, and courage.
+</p> -->
+<div class="watch thirdColor">
+<a href="https://youtu.be/pnkgw6pAKkM?si=77vcUVZoWYZQb_Mp" target="">
+    <i class="hgi hgi-stroke hgi-rounded hgi-play-circle-02 me-2 text-light text-decoration-none"> </i><span thirdColor>Watch Trailer</span>
+    
+</a>
+
+</div>
+                  </div>
+                </div>
+                </div>
+            </li>
+                                    <li class="splide__slide">
+                <div class="watch-slide slide-8">
+                  <div class="layout">  <div class="item text-center text-center text-light">
+                   
+                    <div class="movie-info text-center mt-3 thirdColor">
+    <span class=""><i class="hgi hgi-stroke hgi-rounded hgi-clock-01 thirdColor"></i> 2h 30m</span>
+    <span class=" "><i class="fa-solid fa-star" style="color: rgb(255, 252, 18); "></i> 8.2</span>
+    
+    
+</div>
+<!-- <p class="thirdColor">
+ A timeless tale of love, magic, and courage.
+</p> -->
+<div class="watch thirdColor">
+<a href="https://youtu.be/pnkgw6pAKkM?si=77vcUVZoWYZQb_Mp" target="">
+    <i class="hgi hgi-stroke hgi-rounded hgi-play-circle-02 me-2 text-light text-decoration-none"> </i><span thirdColor>Watch Trailer</span>
+    
+</a>
+
+</div>
+                  </div>
+                </div>
+                </div>
+            </li>
+            
+        </ul>
+        </div>
+    </div>
+</section>
+ <section class="splide py-5" id="top-rated">
+    <div class="container">
+          <div class="head mb-2 d-flex position-relative z-1" >
+<img src="./images/back/ChatGPT Image Sep 20, 2026, 01_06_49 AM.png" alt="" class="img-fluid">
+            <h3 class="text-light"><i class="fa-solid fa-arrow-trend-up fa-float me-2 " style="color: rgb(255, 255, 255);"></i>Top Rated</h3>
+        </div>
+    
+        <div class="splide__track">
+            <ul class="splide__list">
+
+              
+                <li class="splide__slide">
+                  <div class="vedio-box"> 
+                  <video controls>
+                        <source src="./vedios/WhatsApp Video 2026-09-19 at 8.00.06 AM.mp4" type="video/mp4">
+                    </video>
+                     <div class="video-overlay">
+<div class="box text-light">
+  <div class="part1">
+     <h2>The Princess Diaries</h2>
+         <p class="w-80">
+            A shy teenager discovers a royal secret that changes her life
+            forever. From ordinary days to a world of crowns, dreams, and
+            unexpected adventures.
+        </p>
+    </div>
+  <div class="part2 mt-3">
+             <span><i class="fa-solid fa-star thirdColor" style="color: rgb(255, 252, 18);"></i> 7.0</span>
+            <span class="thirdColor">•</span>
+            <span class="thirdColor">1h 55m</span>
+            <span class="thirdColor">•</span>
+            <span class="thirdColor">2001</span>
+  </div>
+             <button type="button" class="btn btn-outline-secondary mt-3"onclick="toggleMyList(this, 'The Princess Diaries')"> <i class="fa-solid fa-plus fa-spin" style="color: rgb(209, 218, 229);"></i> My list </button>
+
+</div>
+                     </div>
+                    </div> 
+
+                    <div class="splide thumbnail-slider" id="pictures-1">
+    <div class="splide__track">
+        <ul class="splide__list">
+
+            <li class="splide__slide">
+                <img src="./images/actors/WhatsApp Image 2026-09-20 at 2.05.21 AM (1).jpeg" alt="" class="img-fluid" >
+            </li>
+
+            <li class="splide__slide">
+                <img src="./images/actors/WhatsApp Image 2026-09-20 at 2.17.24 AM.jpeg" alt="" class="img-fluid">
+            </li>
+
+            <li class="splide__slide">
+                <img src="./images/actors/WhatsApp Image 2026-09-20 at 2.05.21 AM (3).jpeg" alt="" class="img-fluid">
+            </li>
+  <li class="splide__slide">
+                <img src="./images/actors/WhatsApp Image 2026-09-20 at 2.05.21 AM.jpeg" alt="" class="img-fluid">
+            </li>
+        </ul>
+    </div>
+</div>
+                </li>
+
+                
+                <li class="splide__slide">
+                  <div class="vedio-box">  
+                  <video controls>
+                        <source src="./vedios/WhatsApp Video 2026-09-20 at 2.49.23 AM.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay">
+<div class="box text-light">
+  <div class="part1">
+     <h2>Michael Jackson</h2>
+         <p class="">
+             Step into the world of a global icon whose music, performances,
+            and unforgettable legacy changed pop culture forever.
+        </p>
+    </div>
+  <div class="part2 mt-3">
+             <span><i class="fa-solid fa-star thirdColor" style="color: rgb(255, 252, 18);"></i>8.5</span>
+            <span class="thirdColor">•</span>
+            <span class="thirdColor">2h 30m</span>
+            <span class="thirdColor">•</span>
+            <span class="thirdColor">LEGEND</span>
+  </div>
+             <button type="button" class="btn btn-outline-secondary mt-3" onclick="toggleMyList(this, 'Michael Jackson')"> <i class="fa-solid fa-plus fa-spin" style="color: rgb(209, 218, 229);"></i> My list </button>
+
+</div>
+                     </div>
+                    </div>
+ <div class="splide thumbnail-slider" id="pictures-2">
+    <div class="splide__track">
+        <ul class="splide__list">
+
+            <li class="splide__slide">
+                <img src="./images/mickel/GNLZZGG0025WFVK.jpg" alt="" class="img-fluid" >
+            </li>
+
+            <li class="splide__slide">
+                <img src="./images/mickel/images.jpg" alt="" class="img-fluid">
+            </li>
+
+            <li class="splide__slide">
+                <img src="./images/mickel/Jaafar Jackson 2026 LA Premiere_.jpg" alt="" class="img-fluid">
+            </li>
+  <li class="splide__slide">
+                <img src="./images/mickel/MV5BOGE5ZWM5NjUtZDMzMi00OTY2LTg4MWEtNjljN2JhM2JjOTRmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="" class="img-fluid">
+            </li>
+        </ul>
+    </div>
+</div>
+                </li>
+
+               
+                <li class="splide__slide">
+                  <div class="vedio-box"> 
+                  <video controls>
+                        <source src="./images/beauty and beast/WhatsApp Video 2026-09-20 at 3.38.30 AM.mp4" type="video/mp4">
+                        
+                    </video>
+    <div class="video-overlay">
+<div class="box text-light">
+  <div class="part1">
+     <h2>Beauty and the Beast</h2>
+         <p class="w-80">
+       A timeless tale where beauty is found beyond appearances,
+            revealing a magical world filled with love, courage, and wonder.
+        </p>
+    </div>
+  <div class="part2 mt-3">
+             <span><i class="fa-solid fa-star thirdColor" style="color: rgb(255, 252, 18);"></i> 8.0</span>
+            <span class="thirdColor">•</span>
+            <span class="thirdColor">2h 9m</span>
+            <span class="thirdColor">•</span>
+            <span class="thirdColor">2017</span>
+  </div>
+             <button type="button" class="btn btn-outline-secondary mt-3" onclick="toggleMyList(this, 'Beauty and the Beast')"> <i class="fa-solid fa-plus fa-spin" style="color: rgb(209, 218, 229);"></i> My list </button>
+
+</div>
+                     </div>
+                    </div> 
+<div class="splide thumbnail-slider" id="pictures-3">
+    <div class="splide__track">
+        <ul class="splide__list">
+
+            <li class="splide__slide">
+                <img src="./images/beauty and beast/WhatsApp Image 2026-09-20 at 3.32.17 AM.jpeg" alt="" class="img-fluid" >
+            </li>
+
+            <li class="splide__slide">
+                <img src="./images/beauty and beast/WhatsApp Image 2026-09-20 at 3.32.17 AM (1).jpeg" alt="" class="img-fluid">
+            </li>
+
+            <li class="splide__slide">
+                <img src="./images/beauty and beast/WhatsApp Image 2026-09-20 at 3.32.17 AM (2).jpeg" alt="" class="img-fluid">
+            </li>
+  <li class="splide__slide">
+                <img src="./images/beauty and beast/WhatsApp Image 2026-09-20 at 3.32.17 AM (3).jpeg" alt="" class="img-fluid">
+            </li>
+        </ul>
+    </div>
+</div>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</section>
+<section class="splide py-5 " id="Trend" aria-label="Auto Scroll Example">
+<div class="container">
+          <div class="head mb-2 d-flex position-relative z-1">
+            
+            <h3 class="text-light"><i class="fa-solid fa-hashtag fa-wag" style="color: rgb(255, 255, 255);"></i>Trending</h3>
+        </div>
+  <div class="splide__track ">
+    <ul class="splide__list" id="trend-list">
+
+    </ul>
+  </div>
+</div>
+</section>
+<div class="popup p-5 text-light signin">
+  <div class="box">
+  <div class="container">
+
+        <div class="head  mb-4">
+          <i class="fa-regular fa-circle-xmark text-light text-end" onclick="closePopup()"></i>
+        <h2 class="text-light text-center">
+            SIGN IN
+            
+        </h2>
+    </div>
+<div class="body">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="part1">
+                                <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="FirstName *" id="FirstName" required>
+                
+            </div>
+                        <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="LastName *" id="lastName" required>
+                
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="UserName *" id="UserName" required>
+                
+            </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="part2">
+                                <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="gmail *" id="email" required>
+                
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Password *" id="Password" required>
+                
+            </div>
+                        <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="confirm Password *" id="Password" required>
+                
+            </div>
+      </div>
+    </div>
+     <button type="button" class="btn btn-secondary" >submit</button>
+  </div>
+          
+
+
+
+          </div>
+       
+</div>
+    
+
+  </div>
+</div>
+<div class="popup p-5 text-light login">
+  <div class="box">
+  <div class="container">
+
+        <div class="head  mb-4">
+          <i class="fa-regular fa-circle-xmark text-light text-end" onclick="closePopup()"></i>
+        <h2 class="text-light text-center">
+          Log In
+            
+        </h2>
+    </div>
+<div class="body">
+  
+      <div class="part2">
+                                <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="gmail *" id="email" required>
+                
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Password *" id="Password" required>
+                
+            </div>
+                        <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="confirm Password *" id="Password" required>
+                
+            </div>
+      
+    </div>
+     
+  </div>
+      <button type="button" class="btn btn-secondary" >submit</button>    
+
+
+
+</div>
+       
+</div>
+ </div>    
+<div class="popup mylist">
+  <div class="box">
+  <div class="container">
+
+        <div class="head  mb-4">
+          <i class="fa-regular fa-circle-xmark text-light text-end" onclick="closePopup()"></i>
+        <h2 class="text-light text-center">
+         My list
+            
+        </h2>
+    </div>
+<div class="body" id="my-list-container">
+
+</div>
+        
+<button type="button" class="btn btn-secondary" >submit</button>
+
+
+</div>
+       
+</div>
+</div>
+
+<div class="loading vh-100">
+<img src="./images/back/ChatGPT Image Sep 21, 2026, 11_52_36 PM.png" alt="" class="img-fluid">
+<span class="loader"></span>
+<h1 class="text-center">Filmora</h1>
+<div class="container" >
+
+</div>
+</div>
+  </div>
+</div>
+<p class="text-light text-center">© 2026 SemiCode , Ltd. | All Rights Reserved DEVALOPED BY:JANA TAMER</p>
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./js/plugins/wow.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="./js/animate.js"></script>
+<script src="./js/functions.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+<script src="./js/index.js"></script>
+</body>
+</html>

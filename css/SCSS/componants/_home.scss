@@ -1,0 +1,107 @@
+@use "../abstract/index" as *;
+#Home{
+.col-lg-5{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+}
+
+#movie-slider{
+    width: 100%;
+    .movie-slide{
+            height: 100vh;
+                                       @include respond(350){
+         height: 90vh;
+         background-position: cover/*  */
+            }
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+/*     ::after {
+    content: "";
+    display: block;
+    width: 130%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .5);
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: rotate(45deg);
+    transition-duration: 1s;
+} */
+    }
+    
+.btn-outline-secondary{
+     @include respond(350){
+        margin-top: 15px;
+     }
+          @include respond(1050){
+        margin-top: 0px;
+     }
+    }
+.splide__arrows{
+.splide__arrow{
+
+
+    color: $firstColor;
+    background: $firstColor;
+
+}
+.splide__arrow svg {
+    fill: white;
+}
+}
+.slide-1{
+    background-image: url("../images/carousel/WhatsApp\ Image\ 2026-09-18\ at\ 5.49.16\ AM.jpeg");
+        border-radius: 20px;
+}
+.slide-2{
+    background-image: url("../images/carousel/WhatsApp\ Image\ 2026-09-18\ at\ 5.49.16\ AM\ \(6\).jpeg");
+        border-radius: 20px;
+}
+.slide-3{
+    background-image: url("../images/carousel/WhatsApp\ Image\ 2026-09-18\ at\ 5.49.17\ AM.jpeg");
+        border-radius: 20px;
+}
+.slide-4{
+    background-image: url("../images/carousel/WhatsApp\ Image\ 2026-09-18\ at\ 5.49.17\ AM\ \(1\).jpeg");
+        border-radius: 20px;
+}
+}
+#movie-slider .splide__slide {
+    transform: scale(0.92);
+    transition-duration: 1s;
+    opacity: .5;
+}
+
+#movie-slider .splide__slide.is-active {
+    transform: scale(1);
+    opacity: 1;
+}
+     @include respond(350){
+       
+    #movie-slider .btn-outline-secondary {
+        margin-top: 10px;
+    
+}
+     }
+          @include respond(450){
+       
+    #movie-slider .btn-outline-secondary {
+        margin-top: 0px;
+    
+}
+     }
+
+     header {
+         @include respond(350){
+    min-height: 10vh;
+    position: relative;
+         }
+                  @include respond(450){
+    min-height: 10vh;
+    position: relative;
+         }
+}

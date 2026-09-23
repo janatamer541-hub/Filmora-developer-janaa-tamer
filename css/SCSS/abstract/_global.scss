@@ -1,0 +1,113 @@
+@use "./varebiles" as *;
+@use "./mixens" as *;
+@use "./keyframes" as *;
+
+form input.form-control,
+form input.form-control:focus {
+  background-color: transparent !important;
+  background: transparent !important;
+  color: white;
+  border-color: white;
+  box-shadow: none;
+}
+form input.form-control::placeholder {
+  color: white !important;
+  opacity: 1;
+}
+
+h1{
+   color:  $firstColor;
+}
+ .firstColor{
+    color: $firstColor;
+}
+.secondColor{
+    color: $secondColor;
+}
+.thirdColor{
+    color:$thirdColor;
+}
+
+.splide__pagination {
+li{
+.splide__pagination__page {
+background: $firstColor;
+    }
+    }
+}
+.loading{
+    background-image: url(../../../images/back/ChatGPT\ Image\ Sep\ 21\,\ 2026\,\ 11_52_21\ PM.png);
+                 background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%; 
+      width: 100%; 
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+         position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+
+    transition: opacity 1s;
+    pointer-events: all;
+
+    &.hide {
+        opacity: 0;
+        pointer-events: none;
+    }
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(20, 30, 48, 0.7);
+        z-index: 0;
+        
+    }
+    img{
+        width: 30%;
+        position: relative;
+        z-index: 7;
+      animation: myAnimation 2s infinite;
+        display: block;
+    }
+    h1{
+       position: relative;
+        z-index: 7;
+         
+    }
+    
+}
+
+
+.loader {
+  --color-1: rgba(77, 30, 224, 0.15);
+  --color-2: #171BB0;
+  --size: 3px;
+margin-bottom: 10px;
+  width: 50%;
+  height: calc(4.8 * var(--size));
+  display: inline-block;
+  position: relative;
+  background: var(--color-1);
+  overflow: hidden;
+  &:after {
+  content: '';
+  box-sizing: border-box;
+  width: 0;
+  height: calc(4.8 * var(--size));
+  background: var(--color-2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: animFw 10s linear infinite;
+}
+}
+
+
+
+
+

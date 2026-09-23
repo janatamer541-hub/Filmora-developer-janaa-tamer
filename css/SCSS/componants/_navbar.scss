@@ -1,0 +1,161 @@
+@use "../abstract/index" as *;
+
+nav {
+
+        .btn-close {
+        filter: invert(1);
+        opacity: 1;
+    }
+   
+    button.navbar-toggler{
+         border: 1px solid white;
+    color: white;
+        .navbar-toggler-icon {
+              filter: invert(1);
+        opacity: 1;
+    }
+    }
+   #offcanvasNavbar{
+        background-color: #162135;
+        color: white;
+    }
+ 
+    background-image: url(../../../images/back/5a975640-e1ec-42ef-bd5b-80b2ce7a68dc.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(20, 30, 48, 0.7);
+        z-index: -1;
+    }
+} /* اقفلي nav هنا */
+
+
+/* الـ blue line لازم تكون برا nav */
+
+nav.navbar .navbar-nav .nav-item .nav-link::before {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #2672DB;
+    transform: translateY(35px) scaleX(0);
+    transition-duration: 0.5s;
+    position: relative;
+    z-index: 555;
+}
+
+nav.navbar .navbar-nav .nav-item .nav-link:hover::before,
+nav.navbar .navbar-nav .nav-item .nav-link.active::before {
+    transform: translateY(35px) scaleX(1);
+    width: 100%;
+}
+
+
+header {
+    min-height: 100vh;
+    position: relative;
+}
+
+
+nav.navbar {
+    z-index: 99;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 .5rem 1rem #0000001a;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+    @include respond(350) {
+.form-control{
+    width: 70%;
+    
+}
+.navbar-nav {
+text-align: center;
+
+}
+form{
+
+display: none;
+
+}
+.registration {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.btn-outline-light {
+    width: 30%;
+    margin: auto;
+}
+    }
+
+    @include respond(1050) {
+
+    nav.navbar {
+
+        .container {
+            max-width: 940px;
+        }
+
+        .navbar-brand {
+            font-size: 18px;
+
+            img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+
+        .navbar-nav {
+            margin-left: 15px !important;
+            margin-right: 15px !important;
+
+            .nav-item {
+                .nav-link {
+                    font-size: 14px;
+                    white-space: nowrap;
+                    padding-left: 7px;
+                    padding-right: 7px;
+                }
+            }
+        }
+
+        form {
+            margin-left: 5px;
+
+            .form-control {
+                width: 150px;
+                font-size: 14px;
+            }
+
+            button {
+                padding: 5px;
+            }
+        }
+
+        .registration {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 10px;
+
+            button {
+                font-size: 14px;
+                padding: 6px 10px;
+                margin: 5px !important;
+                white-space: nowrap;
+                        width: 70px;
+            }
+        }
+    }
+}
+
