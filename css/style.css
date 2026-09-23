@@ -534,8 +534,13 @@ nav.navbar {
   padding: 15px;
   transform: translateY(20%);
 }
+@media (max-width: 1300px) {
 #top-rated .vedio-box .box p {
   width: 100%;
+}
+  }
+#top-rated .vedio-box .box p {
+  width: 50%;
 }
 #top-rated .vedio-box .box button.btn-outline-secondary {
   pointer-events: auto;
