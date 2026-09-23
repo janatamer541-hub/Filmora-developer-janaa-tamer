@@ -535,7 +535,7 @@ nav.navbar {
   transform: translateY(20%);
 }
 #top-rated .vedio-box .box p {
-  width: 50%;
+  width: 100%;
 }
 #top-rated .vedio-box .box button.btn-outline-secondary {
   pointer-events: auto;
